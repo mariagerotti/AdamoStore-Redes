@@ -78,6 +78,14 @@ main{
     padding: 2em;
 }
 
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
 .card {
     --font-color: #323232;
     --font-color-sub: #666;
