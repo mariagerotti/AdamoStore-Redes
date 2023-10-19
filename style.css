@@ -12,70 +12,65 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+/* Default styles for the header */
 header {
-    padding: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
 }
 
-.header-left {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.header-background {
-    background-image: url('/assets/header.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10% 5%;  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.linux_icon {
+  width: 250px;
+  height: 250px;
+  fill: #CDD6EA;
 }
 
 h1 {
-    text-align: left;
-    margin: 0;
-    font-size: 50px;
-    color: #CDD6EA;
+  text-align: left;
+  margin: 0;
+  font-size: 50px;
+  color: #CDD6EA;
 }
 
-h2 {
- padding-left: 10px;
+/* Media Query for smaller screens (e.g., mobile) */
+.header-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
+
+/* Additional media queries for other screen sizes as needed */
 
 .header-right .search-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-right input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 100%;
-    max-width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .header-right .search-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: 5px;
-    color: #CDD6EA;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 5px;
+  color: #CDD6EA;
 }
 
 .header-right .search-button:hover {
-    color: #474A51;
+  color: #474A51;
 }
 
 main{
@@ -265,8 +260,43 @@ main{
     padding: 10px;
   }
 
-  footer{
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 10px;
     background-color: #838181;
+    gap: 1rem;
+  }
+  
+  .footer__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Adicione media queries para ajustar o layout em tamanhos diferentes de tela */
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column; /* Altera para uma coluna em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer__item {
+      text-align: center; /* Centraliza o conteúdo em telas muito estreitas */
+    }
+  }
+
+
+
+  .footer__item > h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
   }
   
   ul {
@@ -275,6 +305,9 @@ main{
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: inline-flex;
+    width: 100%;
+    
   }
   
   li {
@@ -322,3 +355,91 @@ main{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+  height: 12px; /* Altura da barra de rolagem */
+}
+
+/* Estilo do polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 6px;
+  display: none;
+}
+
+/* Estilo da trilha da barra de rolagem (opcional) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Cor de fundo da trilha */
+  display: none;
+
+
+
+  
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Altera a cor quando o usuário passa o mouse sobre a barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  display: none;
+
+}
+
+.profile_pic>svg{
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+  padding:  14px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+
+  background-color: #333;
+  cursor: pointer;
+}
+
+
+
+.profile_pic > svg:hover {    background-color: #4CAF50;}
+
+
+nav {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+
+
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
+}
+
+
+
+.icon {
+  width: 2rem;
+}
