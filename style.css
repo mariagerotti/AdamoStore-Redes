@@ -282,8 +282,6 @@ main{
     }
   }
 
-
-
   .footer__item > h2 {
     color: #fff;
     font-size: 1.5rem;
@@ -584,4 +582,47 @@ nav {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.body-linux {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.header-linux {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-linux {
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+.nav-linux a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container-linux {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    margin: 0 0 20px;
 }
