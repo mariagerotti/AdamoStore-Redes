@@ -109,7 +109,6 @@ main{
     gap: 10px;
     margin: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    -webkit-overflow-scrolling: touch;
   }
   
   .card:last-child {
@@ -538,7 +537,7 @@ nav {
 }
 
 .body-faq {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
@@ -568,4 +567,43 @@ nav {
 
 .answer {
   margin-bottom: 20px;
+}
+
+.about_us{
+  margin-top: 40px;
+}
+
+.body-linux {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.header-linux {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-linux {
+  text-align: center;
+  background-color: #444;
+  padding: 10px;
+}
+
+.nav-linux a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.container-linux {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
